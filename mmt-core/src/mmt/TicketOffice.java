@@ -296,7 +296,7 @@ new Station(stationName));
     Collections.sort(passenger.getItineraries(), Itinerary.getItineraryComparatorByDate());
     for(Itinerary i : passenger.getItineraries())
       res.add("Itinerário " + itineraryID++ + " para " + i.getDate() + " @ " +
-String.format("%.2f", i.getCost()).replace(",",".") + "\n" + i.toString());
+String.format("%.2f", i.getCost()) + "\n" + i.toString());
     return res;
   }
 
@@ -362,7 +362,7 @@ String departureTime) throws NoSuchPassengerIdException, BadTimeSpecificationExc
     int itineraryID = 1;
     for(Itinerary i : itineraries)
       res.add("Itinerário " + itineraryID++ + " para " + i.getDate() + " @ " +
-String.format("%.2f", i.getCost()).replace(",",".") + "\n" + i.toString());
+String.format("%.2f", i.getCost()) + "\n" + i.toString());
 
     if(itineraryID > 1)
       res.set(0, "\n" + res.get(0));

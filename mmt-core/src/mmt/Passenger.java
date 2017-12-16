@@ -120,7 +120,7 @@ difference between the newly added Itinerary and the 11th Itinerary (if it exist
 String.format("%02d", _timeSpent.toMinutes() % 60);
 
 		return _id + "|" + _name + "|" + _category + "|" + _itineraries.size()
-+ "|" + String.format("%.2f", _moneySpent).replace(",",".") + "|" + time;
++ "|" + String.format("%.2f", _moneySpent) + "|" + time;
 
 	}
 

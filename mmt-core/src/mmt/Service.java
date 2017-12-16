@@ -104,7 +104,7 @@ public class Service implements Serializable, Iterable<Station> {
 		*/
 	@Override
 	public String toString() {
-		String res = "Serviço #" + _id + " @ " + String.format("%.2f", _cost).replace(",",".");
+		String res = "Serviço #" + _id + " @ " + String.format("%.2f", _cost);
 		for (Station station : _stations)
 			res += "\n" + station;
 		return res;

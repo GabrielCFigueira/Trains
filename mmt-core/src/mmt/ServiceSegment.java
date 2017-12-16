@@ -89,7 +89,7 @@ public class ServiceSegment implements Serializable {
   @Override
   public String toString() {
 
-    String res = "Serviço #" + _service.getId() + " @ " + String.format("%.2f", getCost()).replace(",",".");
+    String res = "Serviço #" + _service.getId() + " @ " + String.format("%.2f", getCost());
 
     Iterator<Station> iterator = _service.iterator();
     Station station;

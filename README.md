@@ -4,4 +4,4 @@ See https://www.l2f.inesc-id.pt/~david/w/pt/Programa%C3%A7%C3%A3o_com_Objectos/P
 
 Keeps information about train services, its' passengers, voyages(itineraries) bought and made.
 Can save its state to load it later or in another run of the program.
-The code and comments are in english but the output is in Portuguese.
+The code and comments are in english but the output(and Input expected) is in Portuguese.
